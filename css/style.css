@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import url("sanitize.css");
+
+/*確認用
+border:solid 1px red;*/
+
+body{
+    /*letter-spacing:1.5px;*/
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    height:auto;
+}
+
+.header-container{
+    height: 70px;
+    width: 100%;
+    background-color:#2a7eb1;
+}
+
+.header-width{
+    margin:0  200px 0 340px;
+}
+
+.header-logo{
+    float: left;
+}
+
+.header-logo img{
+    margin-top:16px;
+}
+
+.header-list ul{
+    list-style: none;
+    margin-left:420px;
+    margin-top:25px;
+}
+
+.header-list{
+    float:left;
+}
+
+.header-list li{
+    float:left;
+    margin-right: 35px;
+    color:white;
+}
+
+.background-img{
+    background-image: url(../img/mv.jpg);
+    height:380px;
+    background-size: cover;
+}
+
+.body-container{
+    margin:50px 0;
+}
+
+.blue-line{
+    padding:15px 3px 20px 4px;
+    background-color:#2a7eb1;
+    float:left;
+}
+
+.body-logo h2{
+    font-size:36px;
+    margin-left:30px;
+}
+
+.main-box{
+    box-shadow: 0 0 5px rgba(17, 51, 72, 0.2);
+    border:solid 1px #b3b3b3;
+    transition: all 0.3s ease 0s;
+    border-radius: 6px;
+    width: 360px;
+    padding:20px;
+}
+
+.outside{
+    width:33%;
+    margin-bottom:60px;
+    float:left;
+    overflow: hidden;
+}
+
+
+.txt{
+    font-size: 18px;
+}
+
+footer{
+    background:#b3b3b3;
+    height:70px;
+    width:100%;
+    clear: both;
+}
+
+footer p{
+    text-align: center;
+    padding-top:30px;
+    font-size:12px;
+}
+
+@media screen and (max-width: 1179px) {
+    .header-width{
+        margin:0 0 0 20px;
+    }
+
+    .header-list li{
+        display: none;
+    }
+
+    .background-img{
+        height:180px;
+    }
+
+    .main-box{
+        width:90%;
+    }
+
+    .cat-img img{
+        width:90%;
+    }
+
+    .txt{
+        width:90%;
+        
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .background-img{
+        height:90px;
+    }
+
+    .outside{
+        width:360px;
+        margin-bottom:60px;
+        float:left;
+    }
+
+    .main-box{
+        margin:0 auto;
+    }
+}
